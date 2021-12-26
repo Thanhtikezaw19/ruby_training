@@ -1,0 +1,6 @@
+<div class=logout>
+<h2>Logged in Successfully</h2>
+<%= form_for(:session, url: logout_path) do |f| %>
+<%= f.submit "Log out", class: "btn-submit" %>
+<% end %>
+</div>
