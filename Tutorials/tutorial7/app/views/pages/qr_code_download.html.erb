@@ -1,0 +1,14 @@
+<div class = container>
+  <h1>Your QR Code</h1>
+  <div class=image>
+    <img src="<%= @png.to_data_url %>"><br>
+  </div>
+  <div class= linktab>
+    <a href = "<%= @png.to_data_url %>" download>
+      Download QRCode
+    </a> <br>
+    <a href="<%= qr_code_generator_path %>">
+      Create another One
+    </a>
+  </div>
+<div>
