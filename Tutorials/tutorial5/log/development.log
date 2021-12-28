@@ -1,0 +1,723 @@
+
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:12:59 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 611.5ms | Allocations: 685)
+  Rendered layout layouts/application.html.erb (Duration: 1654.3ms | Allocations: 14018)
+Completed 200 OK in 1771ms (Views: 1770.0ms | Allocations: 14652)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:13:09 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd8ad6b10 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-nq263m.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info
+Completed 302 Found in 3ms (Allocations: 643)
+
+
+Started GET "/file_info" for 127.0.0.1 at 2021-12-21 16:13:09 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2466)
+Completed 200 OK in 7ms (Views: 6.7ms | Allocations: 2723)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:16:44 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 27.7ms | Allocations: 909)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 3156)
+Completed 200 OK in 58ms (Views: 56.2ms | Allocations: 4053)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:16:49 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd8d41e90 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-i6nu0b.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info
+Completed 302 Found in 4ms (Allocations: 589)
+
+
+Started GET "/file_info" for 127.0.0.1 at 2021-12-21 16:16:49 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 1.0ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 2573)
+Completed 200 OK in 8ms (Views: 7.6ms | Allocations: 2878)
+
+
+Started GET "/file_info" for 127.0.0.1 at 2021-12-21 16:17:48 +0630
+Processing by FormsController#file_info as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 13650)
+Completed 200 OK in 33ms (Views: 31.6ms | Allocations: 14285)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:17:49 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 665)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2708)
+Completed 200 OK in 15ms (Views: 13.8ms | Allocations: 2963)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:17:53 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd936b320 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-qn7xcq.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?[:newfile]
+Completed 302 Found in 2ms (Allocations: 624)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:17:53 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 2446)
+Completed 200 OK in 6ms (Views: 5.0ms | Allocations: 2703)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:17:54 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 2434)
+Completed 200 OK in 9ms (Views: 8.6ms | Allocations: 2685)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:17:55 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 657)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 2684)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 2937)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:17:56 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 659)
+  Rendered layout layouts/application.html.erb (Duration: 15.4ms | Allocations: 2696)
+Completed 200 OK in 17ms (Views: 16.6ms | Allocations: 2947)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:17:56 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 667)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2694)
+Completed 200 OK in 15ms (Views: 13.7ms | Allocations: 2944)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:17:57 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 697)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2730)
+Completed 200 OK in 15ms (Views: 14.4ms | Allocations: 2981)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:17:57 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 685)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2712)
+Completed 200 OK in 15ms (Views: 13.3ms | Allocations: 2962)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:17:59 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fcc9d3a80 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-11mq5xq.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?[:newfile]
+Completed 302 Found in 3ms (Allocations: 608)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:17:59 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2494)
+Completed 200 OK in 6ms (Views: 5.2ms | Allocations: 2751)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:18:36 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.2ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 13749)
+Completed 200 OK in 25ms (Views: 24.4ms | Allocations: 14382)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:18:37 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.6ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2497)
+Completed 200 OK in 17ms (Views: 16.3ms | Allocations: 2750)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:18:37 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2466)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 2719)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:18:37 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {":newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2474)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 2725)
+
+
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:21:44 +0630
+  
+SyntaxError (/home/jinxin/Desktop/Ruby_Training/tutorial5/app/controllers/forms_controller.rb:13: syntax error, unexpected `end', expecting ':'
+  end
+  ^~~
+/home/jinxin/Desktop/Ruby_Training/tutorial5/app/controllers/forms_controller.rb:17: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/forms_controller.rb:13: syntax error, unexpected `end', expecting ':'
+app/controllers/forms_controller.rb:17: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/forms_controller.rb:13: syntax error, unexpected `end', expecting ':'
+app/controllers/forms_controller.rb:17: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/forms_controller.rb:13: syntax error, unexpected `end', expecting ':'
+app/controllers/forms_controller.rb:17: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/file_info?[:newfile]" for 127.0.0.1 at 2021-12-21 16:21:50 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:21:54 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:21:57 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:21:58 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:21:59 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:22:00 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:22:00 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:22:01 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:22:02 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:22:03 +0630
+  
+ActionController::RoutingError (uninitialized constant FormsController):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:22:27 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 904)
+  Rendered layout layouts/application.html.erb (Duration: 33.7ms | Allocations: 14442)
+Completed 200 OK in 39ms (Views: 37.7ms | Allocations: 15302)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:22:31 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd88ec2f0 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-11yi702.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?@newfile
+Completed 302 Found in 3ms (Allocations: 656)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:22:31 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 1.0ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2587)
+Completed 200 OK in 8ms (Views: 7.2ms | Allocations: 2892)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:22:45 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 1.4ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 11.3ms | Allocations: 2811)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 3597)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:23:08 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2471)
+Completed 200 OK in 8ms (Views: 7.1ms | Allocations: 2723)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:23:09 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 2443)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 2694)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:27:02 +0630
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:27:05 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 18.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 396.7ms | Allocations: 13792)
+Completed 200 OK in 427ms (Views: 424.8ms | Allocations: 14435)
+
+
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 25.4ms | Allocations: 904)
+  Rendered layout layouts/application.html.erb (Duration: 52.6ms | Allocations: 14231)
+Completed 200 OK in 56ms (Views: 55.2ms | Allocations: 14920)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:27:07 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 663)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2690)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 2941)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:27:13 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fcc0b1358 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-1u9d6cg.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?@newfile
+Completed 302 Found in 2ms (Allocations: 650)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:27:13 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 2463)
+Completed 200 OK in 8ms (Views: 7.0ms | Allocations: 2767)
+
+
+Started GET "/file_info?@newfile" for 127.0.0.1 at 2021-12-21 16:29:35 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"@newfile"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 13815)
+Completed 200 OK in 33ms (Views: 32.3ms | Allocations: 14450)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:29:36 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 2721)
+Completed 200 OK in 21ms (Views: 20.6ms | Allocations: 2975)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:29:37 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 2718)
+Completed 200 OK in 23ms (Views: 21.8ms | Allocations: 2968)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:29:42 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd8066450 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-1ayh70p.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?Uploaded file contains- hello ruby
+Completed 302 Found in 8ms (Allocations: 658)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:29:42 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.2ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2471)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 2728)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:29:54 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 1.9ms | Allocations: 112)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 2733)
+Completed 200 OK in 44ms (Views: 42.0ms | Allocations: 3519)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:29:56 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 9.8ms | Allocations: 916)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 2952)
+Completed 200 OK in 25ms (Views: 24.7ms | Allocations: 3258)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:29:59 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd8dc8fd0 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-18181s3.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?Uploaded file contains- hello ruby
+Completed 302 Found in 4ms (Allocations: 668)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:29:59 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 15)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2460)
+Completed 200 OK in 9ms (Views: 7.7ms | Allocations: 2765)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:32:03 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 1.0ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 2806)
+Completed 200 OK in 34ms (Views: 32.8ms | Allocations: 3592)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:32:25 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 31.5ms | Allocations: 13755)
+Completed 200 OK in 34ms (Views: 33.4ms | Allocations: 14389)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:32:26 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 2479)
+Completed 200 OK in 7ms (Views: 6.8ms | Allocations: 2730)
+
+
+Started GET "/file_info?Uploaded%20file%20contains-%20hello%20ruby" for 127.0.0.1 at 2021-12-21 16:32:27 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"Uploaded file contains- hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2455)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 2706)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:32:28 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 872)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 2908)
+Completed 200 OK in 27ms (Views: 22.9ms | Allocations: 3213)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:32:29 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 645)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2680)
+Completed 200 OK in 11ms (Views: 10.0ms | Allocations: 2932)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:32:32 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd8c46ea0 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-1bn9cst.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?hello ruby
+Completed 302 Found in 3ms (Allocations: 647)
+
+
+Started GET "/file_info?hello%20ruby" for 127.0.0.1 at 2021-12-21 16:32:32 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.2ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2459)
+Completed 200 OK in 8ms (Views: 7.3ms | Allocations: 2763)
+
+
+Started GET "/file_info?hello%20ruby" for 127.0.0.1 at 2021-12-21 16:34:24 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"hello ruby"=>nil}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 4.0ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 36.2ms | Allocations: 14055)
+Completed 200 OK in 40ms (Views: 38.8ms | Allocations: 14848)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:34:25 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 907)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 2959)
+Completed 200 OK in 24ms (Views: 23.2ms | Allocations: 3266)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:34:26 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 651)
+  Rendered layout layouts/application.html.erb (Duration: 13.1ms | Allocations: 2678)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 2929)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:34:26 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 673)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2700)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 2950)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:34:27 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 677)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2704)
+Completed 200 OK in 13ms (Views: 12.0ms | Allocations: 2954)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 16:34:27 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 661)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2688)
+Completed 200 OK in 14ms (Views: 12.1ms | Allocations: 2938)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-21 16:34:30 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007f1fd9079518 @tempfile=#<Tempfile:/tmp/RackMultipart20211221-70520-10ydot0.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+hello ruby
+
+Redirected to http://127.0.0.1:3000/file_info?uploadfile=hello ruby
+Completed 302 Found in 3ms (Allocations: 631)
+
+
+Started GET "/file_info?uploadfile=hello%20ruby" for 127.0.0.1 at 2021-12-21 16:34:30 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"uploadfile"=>"hello ruby"}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.4ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2450)
+Completed 200 OK in 9ms (Views: 8.5ms | Allocations: 2754)
+
+
+Started GET "/file_info?uploadfile=hello%20ruby" for 127.0.0.1 at 2021-12-21 16:34:32 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"uploadfile"=>"hello ruby"}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 0.1ms | Allocations: 27)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2471)
+Completed 200 OK in 10ms (Views: 8.9ms | Allocations: 2722)
+
+
+Started GET "/file_info?uploadfile=hello%20ruby" for 127.0.0.1 at 2021-12-21 16:45:42 +0630
+Processing by FormsController#file_info as HTML
+  Parameters: {"uploadfile"=>"hello ruby"}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 140.9ms | Allocations: 153)
+  Rendered layout layouts/application.html.erb (Duration: 708.3ms | Allocations: 14104)
+Completed 200 OK in 849ms (Views: 847.9ms | Allocations: 14897)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:06:55 +0630
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:06:57 +0630
+  [1m[36mActiveRecord::SchemaMigration Pluck (74.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by FormsController#index as HTML
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 118.9ms | Allocations: 3888)
+  Rendered forms/index.html.erb within layouts/application (Duration: 119.2ms | Allocations: 4150)
+  Rendered layout layouts/application.html.erb (Duration: 702.3ms | Allocations: 66367)
+  Rendered layout layouts/application.html.erb (Duration: 703.2ms | Allocations: 66624)
+Completed 200 OK in 795ms (Views: 717.4ms | ActiveRecord: 0.0ms | Allocations: 71793)
+
+
+Completed 200 OK in 796ms (Views: 716.0ms | ActiveRecord: 0.0ms | Allocations: 71992)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:08:30 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 516)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 13844)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 14479)
+
+
+Started POST "/upload" for 127.0.0.1 at 2021-12-27 21:08:37 +0630
+Processing by FormsController#updata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "fupload"=>{"txtfile"=>#<ActionDispatch::Http::UploadedFile:0x00007faf1d2aa8e0 @tempfile=#<Tempfile:/tmp/RackMultipart20211227-46139-hjf0yg.txt>, @original_filename="hello.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"fupload[txtfile]\"; filename=\"hello.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Upload"}
+fupload
+Redirected to http://127.0.0.1:3000/file_info?uploadfile=hello ruby
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 487)
+
+
+Started GET "/file_info?uploadfile=hello%20ruby" for 127.0.0.1 at 2021-12-27 21:08:37 +0630
+Processing by FormsController#file_info as TURBO_STREAM
+  Parameters: {"uploadfile"=>"hello ruby"}
+  Rendering layout layouts/application.html.erb
+  Rendering forms/file_info.html.erb within layouts/application
+  Rendered forms/file_info.html.erb within layouts/application (Duration: 1.8ms | Allocations: 152)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2424)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 2728)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:16:04 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 19.0ms | Allocations: 736)
+  Rendered layout layouts/application.html.erb (Duration: 47.3ms | Allocations: 14193)
+Completed 200 OK in 53ms (Views: 51.6ms | Allocations: 14986)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:16:05 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 528)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2564)
+Completed 200 OK in 9ms (Views: 8.7ms | Allocations: 2816)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:16:06 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 509)
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | Allocations: 2536)
+Completed 200 OK in 8ms (Views: 7.5ms | Allocations: 2787)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:16:06 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 525)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 2552)
+Completed 200 OK in 13ms (Views: 12.2ms | Allocations: 2803)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:16:06 +0630
+Processing by FormsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering forms/index.html.erb within layouts/application
+  Rendered forms/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 521)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2548)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 2799)
+
+
