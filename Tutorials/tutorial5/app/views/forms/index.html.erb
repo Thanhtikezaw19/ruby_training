@@ -1,0 +1,12 @@
+<div class=create-input>
+  <h1>Input text file in the form</h1>
+    <%= form_for(:form_upload, url: upload_path) do |f| %>
+      <div class= txt-form>
+        <%= f.label :file %>
+        <%= f.file_field :txtfile %>
+      </div>
+      <div class= action>
+        <%= f.submit :Upload %>
+      </div>
+    <% end %>
+</div>
