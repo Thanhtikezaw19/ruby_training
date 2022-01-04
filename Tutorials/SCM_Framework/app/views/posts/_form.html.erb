@@ -1,0 +1,19 @@
+<div class = form-class > 
+  <%= form_with model: [ @user, @user.posts.build ] do |form| %>
+    <p>
+      <%= form.label :Title %><br>
+      <%= form.text_field :title %>
+    </p>
+    <p>
+      <%= form.label :Description %><br>
+      <%= form.text_area :description %>
+    </p>
+    <p>
+      <%= form.label :Public_Flag? %><br>
+      <%= form.radio_button :public_flag , 'true' %>
+    </p>
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
