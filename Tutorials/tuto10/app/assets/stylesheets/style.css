@@ -1,0 +1,16 @@
+.notice,
+.alert {
+  color: #548df5;
+  font-size: 20px;
+  font-style: italic;
+}
+
+h1 {
+  color: #0000ff;
+}
+
+.email,
+.password,
+.submit {
+  margin: 5px auto;
+}

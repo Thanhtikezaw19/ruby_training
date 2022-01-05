@@ -1,0 +1,15 @@
+<h1>Reset Password</h1>
+<%= form_with model: @user, url: password_reset_edit_path(token: params[:token]) do |form| %>
+  <p class="alert"><%= flash[:alert] %></p>
+  <div class="password">
+    <%= form.label :Password %><br/>
+    <%= form.password_field :password, placeholder: "password" %>
+  </div>
+  <div class="password">
+    <%= form.label :Confirm_Password %><br/>
+    <%= form.password_field :password_confirmation, placeholder: "Confirm password" %>
+  </div>
+  <div>
+    <%= form.submit "Reset Password" %>
+  </div>
+<% end %>
