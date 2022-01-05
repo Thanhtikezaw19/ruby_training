@@ -1,0 +1,1115 @@
+Started POST "/login" for 127.0.0.1 at 2021-12-21 09:57:22 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+success
+No template found for SessionsController#usrdata, rendering head :no_content
+Completed 204 No Content in 3ms (Allocations: 633)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:00:09 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 466)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:00:09 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.5ms | Allocations: 398)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 13626)
+Completed 200 OK in 33ms (Views: 32.5ms | Allocations: 14261)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:00:11 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Completed 500 Internal Server Error in 12ms (Allocations: 1235)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:11:in `usrdata'
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:00:39 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 2517)
+Completed 200 OK in 41ms (Views: 40.4ms | Allocations: 2771)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:00:39 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 2526)
+Completed 200 OK in 29ms (Views: 23.7ms | Allocations: 2778)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:00:52 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"mgo@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+mgo@123.com
+sfddsf
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 3ms (Allocations: 454)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-12-21 10:00:52 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:00:52 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 470)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2497)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 2747)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:01:22 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 2ms (Allocations: 462)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:01:22 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.4ms | Allocations: 396)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2423)
+Completed 200 OK in 9ms (Views: 8.2ms | Allocations: 2680)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:01:24 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Completed 500 Internal Server Error in 3ms (Allocations: 1234)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:11:in `usrdata'
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:01:53 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 2519)
+Completed 200 OK in 21ms (Views: 20.0ms | Allocations: 2773)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:01:54 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 470)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2497)
+Completed 200 OK in 14ms (Views: 12.9ms | Allocations: 2747)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:03:50 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 454)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:03:50 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.7ms | Allocations: 412)
+  Rendered layout layouts/application.html.erb (Duration: 48.3ms | Allocations: 13754)
+Completed 200 OK in 52ms (Views: 50.7ms | Allocations: 14388)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:03:52 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Completed 500 Internal Server Error in 4ms (Allocations: 1226)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:11:in `usrdata'
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:05:02 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 676)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2939)
+Completed 200 OK in 20ms (Views: 18.6ms | Allocations: 3841)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:05:02 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 469)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2496)
+Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 2747)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:06:32 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 58.7ms | Allocations: 13780)
+Completed 200 OK in 63ms (Views: 62.4ms | Allocations: 14412)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:06:44 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 444)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:06:44 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 35.6ms | Allocations: 564)
+  Rendered layout layouts/application.html.erb (Duration: 42.5ms | Allocations: 2601)
+Completed 200 OK in 45ms (Views: 44.0ms | Allocations: 2906)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:06:45 +0630
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:06:45 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.5ms | Allocations: 400)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 2427)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 2679)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:06:47 +0630
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:06:47 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.6ms | Allocations: 388)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 2431)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 2684)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:06:49 +0630
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:06:49 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.4ms | Allocations: 384)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 2413)
+Completed 200 OK in 15ms (Views: 13.9ms | Allocations: 2665)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:07:26 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 13785)
+Completed 200 OK in 38ms (Views: 37.3ms | Allocations: 14420)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:07:27 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 2501)
+Completed 200 OK in 27ms (Views: 25.8ms | Allocations: 2751)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-21 10:07:28 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 466)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 2509)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 2761)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:07:34 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 444)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:07:34 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 3.6ms | Allocations: 393)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2420)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2677)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:07:35 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 5ms (Allocations: 426)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:07:35 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 2491)
+Completed 200 OK in 16ms (Views: 15.9ms | Allocations: 2748)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:07:42 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+eeesre
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 3ms (Allocations: 444)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-12-21 10:07:42 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:07:42 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 2511)
+Completed 200 OK in 25ms (Views: 24.5ms | Allocations: 2762)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:07:45 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 5.8ms | Allocations: 384)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 2411)
+Completed 200 OK in 15ms (Views: 14.3ms | Allocations: 2665)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:09:59 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 426)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:09:59 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 456)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 2485)
+Completed 200 OK in 7ms (Views: 6.5ms | Allocations: 2742)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:13:29 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 294.6ms | Allocations: 6833)
+Completed 200 OK in 296ms (Views: 295.6ms | Allocations: 7083)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:13:31 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2550)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 2800)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:13:49 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2554)
+Completed 200 OK in 13ms (Views: 11.6ms | Allocations: 2804)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:14:03 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 462)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5966)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 6216)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:14:20 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 19.3ms | Allocations: 6059)
+Completed 200 OK in 25ms (Views: 23.5ms | Allocations: 6309)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:16:12 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 470)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 2614)
+Completed 200 OK in 35ms (Views: 33.7ms | Allocations: 2865)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:16:23 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+
+
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 2ms (Allocations: 448)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-12-21 10:16:23 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:16:23 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 456)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2560)
+Completed 200 OK in 12ms (Views: 11.5ms | Allocations: 2812)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:16:30 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hosting123
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 4ms (Allocations: 442)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-12-21 10:16:30 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:16:30 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 2577)
+Completed 200 OK in 13ms (Views: 11.8ms | Allocations: 2828)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:16:38 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 452)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:16:38 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 2.6ms | Allocations: 390)
+  Rendered layout layouts/application.html.erb (Duration: 7.7ms | Allocations: 2478)
+Completed 200 OK in 11ms (Views: 10.5ms | Allocations: 2735)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:16:39 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 4ms (Allocations: 424)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:16:39 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 458)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2546)
+Completed 200 OK in 11ms (Views: 10.1ms | Allocations: 2802)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:17:00 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 674)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2982)
+Completed 200 OK in 13ms (Views: 11.7ms | Allocations: 3879)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:18:38 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 73.0ms | Allocations: 473)
+  Rendered layout layouts/application.html.erb (Duration: 619.1ms | Allocations: 6110)
+Completed 200 OK in 657ms (Views: 619.9ms | Allocations: 6362)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:20:26 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 56.0ms | Allocations: 677)
+  Rendered layout layouts/application.html.erb (Duration: 141.5ms | Allocations: 6518)
+Completed 200 OK in 553ms (Views: 506.3ms | Allocations: 7415)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:20:31 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+
+
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 3ms (Allocations: 456)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-12-21 10:20:32 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:20:33 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 473)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 2577)
+Completed 200 OK in 21ms (Views: 20.2ms | Allocations: 2829)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:20:40 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 454)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:20:40 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 65.9ms | Allocations: 566)
+  Rendered layout layouts/application.html.erb (Duration: 69.9ms | Allocations: 2663)
+Completed 200 OK in 71ms (Views: 70.6ms | Allocations: 2968)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:21:03 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.2ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 67.1ms | Allocations: 5996)
+Completed 200 OK in 69ms (Views: 67.8ms | Allocations: 6248)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:21:06 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 412)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:21:06 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 463)
+  Rendered layout layouts/application.html.erb (Duration: 6.5ms | Allocations: 2566)
+Completed 200 OK in 8ms (Views: 7.4ms | Allocations: 2823)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:21:07 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+
+
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 2ms (Allocations: 448)
+
+
+Started GET "/new" for 127.0.0.1 at 2021-12-21 10:21:07 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:21:08 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2567)
+Completed 200 OK in 10ms (Views: 9.7ms | Allocations: 2818)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:21:33 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 478)
+  Rendered layout layouts/application.html.erb (Duration: 163.7ms | Allocations: 6571)
+Completed 200 OK in 165ms (Views: 164.7ms | Allocations: 6821)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:21:40 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 6096)
+Completed 200 OK in 24ms (Views: 22.5ms | Allocations: 6347)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:22:41 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 484)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 6107)
+Completed 200 OK in 38ms (Views: 37.1ms | Allocations: 6357)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:22:44 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 490)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2592)
+Completed 200 OK in 11ms (Views: 10.4ms | Allocations: 2843)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:22:57 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 480)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 6103)
+Completed 200 OK in 36ms (Views: 35.0ms | Allocations: 6353)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:22:59 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 2556)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 2807)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:23:11 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 476)
+  Rendered layout layouts/application.html.erb (Duration: 83.5ms | Allocations: 6647)
+Completed 200 OK in 85ms (Views: 84.6ms | Allocations: 6897)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:23:14 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 466)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 2554)
+Completed 200 OK in 10ms (Views: 8.5ms | Allocations: 2805)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:23:14 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 464)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 2552)
+Completed 200 OK in 15ms (Views: 13.8ms | Allocations: 2802)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:23:15 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 472)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 2570)
+Completed 200 OK in 19ms (Views: 18.0ms | Allocations: 2821)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:23:20 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 482)
+  Rendered layout layouts/application.html.erb (Duration: 30.8ms | Allocations: 6109)
+Completed 200 OK in 33ms (Views: 31.9ms | Allocations: 6359)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:23:43 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 474)
+  Rendered layout layouts/application.html.erb (Duration: 56.8ms | Allocations: 6102)
+Completed 200 OK in 60ms (Views: 58.3ms | Allocations: 6352)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:24:15 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 2ms (Allocations: 448)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:15 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 0.9ms | Allocations: 378)
+  Rendered layout layouts/application.html.erb (Duration: 46.3ms | Allocations: 6009)
+Completed 200 OK in 47ms (Views: 46.9ms | Allocations: 6267)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:15 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.5ms | Allocations: 390)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2478)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2729)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:24:16 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 432)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:24:16 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 460)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2548)
+Completed 200 OK in 12ms (Views: 10.9ms | Allocations: 2804)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-21 10:24:23 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (Allocations: 444)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:23 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.3ms | Allocations: 398)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 2486)
+Completed 200 OK in 11ms (Views: 10.2ms | Allocations: 2743)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:49 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.2ms | Allocations: 386)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 6003)
+Completed 200 OK in 31ms (Views: 30.4ms | Allocations: 6254)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:51 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 4.0ms | Allocations: 380)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2476)
+Completed 200 OK in 20ms (Views: 18.5ms | Allocations: 2728)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:52 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.4ms | Allocations: 396)
+  Rendered layout layouts/application.html.erb (Duration: 9.2ms | Allocations: 2484)
+Completed 200 OK in 12ms (Views: 10.8ms | Allocations: 2735)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-21 10:24:52 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 0.9ms | Allocations: 380)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 2468)
+Completed 200 OK in 9ms (Views: 7.2ms | Allocations: 2719)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-21 10:24:53 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 428)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:24:53 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2556)
+Completed 200 OK in 10ms (Views: 9.0ms | Allocations: 2813)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:24:56 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 470)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 2558)
+Completed 200 OK in 16ms (Views: 14.8ms | Allocations: 2808)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:24:56 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 468)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 2569)
+Completed 200 OK in 12ms (Views: 10.0ms | Allocations: 2819)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-21 10:24:56 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 478)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 2566)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 2816)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-27 21:41:38 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 132.6ms | Allocations: 1280)
+  Rendered layout layouts/application.html.erb (Duration: 647.9ms | Allocations: 41084)
+Completed 200 OK in 726ms (Views: 656.9ms | ActiveRecord: 0.0ms | Allocations: 45825)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-27 21:43:46 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+hellotesting@123.com
+hello123
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 533)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-27 21:43:46 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 10.5ms | Allocations: 619)
+  Rendered layout layouts/application.html.erb (Duration: 37.4ms | Allocations: 13924)
+Completed 200 OK in 40ms (Views: 39.5ms | ActiveRecord: 0.0ms | Allocations: 14604)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-27 21:43:50 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 478)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-27 21:43:50 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 520)
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 2626)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms | Allocations: 2887)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-27 22:00:43 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 749)
+  Rendered layout layouts/application.html.erb (Duration: 54.4ms | Allocations: 14348)
+Completed 200 OK in 63ms (Views: 61.6ms | Allocations: 15140)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-27 22:00:50 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 2ms (Allocations: 491)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-27 22:00:50 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 2.7ms | Allocations: 607)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 2704)
+Completed 200 OK in 12ms (Views: 11.2ms | Allocations: 3009)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-27 22:02:14 +0630
+Processing by SessionsController#hello as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.7ms | Allocations: 447)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 13826)
+Completed 200 OK in 35ms (Views: 34.3ms | Allocations: 14461)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-27 22:02:15 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 475)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-27 22:02:15 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 512)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2600)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 2857)
+
+
+Started POST "/login" for 127.0.0.1 at 2021-12-27 22:02:20 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 2ms (Allocations: 475)
+
+
+Started GET "/hello" for 127.0.0.1 at 2021-12-27 22:02:20 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.4ms | Allocations: 441)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2529)
+Completed 200 OK in 9ms (Views: 8.1ms | Allocations: 2786)
+
+
+Started POST "/logout" for 127.0.0.1 at 2021-12-27 22:02:38 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 485)
+
+
+Started GET "/login" for 127.0.0.1 at 2021-12-27 22:02:38 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 525)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2613)
+Completed 200 OK in 10ms (Views: 9.5ms | Allocations: 2870)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-02 22:11:08 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 105.4ms | Allocations: 1186)
+Started GET "/" for 127.0.0.1 at 2022-01-02 22:11:10 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 363)
+  Rendered layout layouts/application.html.erb (Duration: 749.8ms | Allocations: 63452)
+Completed 200 OK in 975ms (Views: 845.4ms | ActiveRecord: 0.0ms | Allocations: 67343)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 389.5ms | Allocations: 48859)
+Completed 200 OK in 392ms (Views: 390.6ms | ActiveRecord: 0.0ms | Allocations: 49120)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-02 22:11:22 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 438)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-01-02 22:11:22 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 13.2ms | Allocations: 520)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 2619)
+Completed 200 OK in 22ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 2923)
+
+
+Started POST "/logout" for 127.0.0.1 at 2022-01-02 22:11:24 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-01-02 22:11:24 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 418)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 2508)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2766)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-01-02 22:51:23 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 449)
+  Rendered layout layouts/application.html.erb (Duration: 174.5ms | Allocations: 13855)
+Completed 200 OK in 332ms (Views: 330.8ms | Allocations: 14494)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-02 22:51:31 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 4ms (Allocations: 397)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-01-02 22:51:31 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 1.4ms | Allocations: 360)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 2448)
+Completed 200 OK in 10ms (Views: 8.8ms | Allocations: 2705)
+
+
+Started POST "/logout" for 127.0.0.1 at 2022-01-02 22:51:33 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (Allocations: 385)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-01-02 22:51:33 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 427)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 2515)
+Completed 200 OK in 10ms (Views: 9.2ms | Allocations: 2772)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-01-02 22:51:51 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 84.5ms | Allocations: 1277)
+  Rendered layout layouts/application.html.erb (Duration: 260.7ms | Allocations: 34450)
+Completed 200 OK in 312ms (Views: 265.4ms | ActiveRecord: 0.0ms | Allocations: 38279)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-02 22:51:56 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"mgo@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://127.0.0.1:3000/new
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 420)
+
+
+Started GET "/new" for 127.0.0.1 at 2022-01-02 22:51:56 +0630
+  
+ActionController::RoutingError (No route matches [GET] "/new"):
+  
+Started GET "/login" for 127.0.0.1 at 2022-01-02 22:51:56 +0630
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 434)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2523)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 2775)
+
+
+Started POST "/login" for 127.0.0.1 at 2022-01-02 22:52:03 +0630
+Processing by SessionsController#usrdata as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"hellotesting@123.com", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+Redirected to http://127.0.0.1:3000/hello
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 396)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-01-02 22:52:03 +0630
+Processing by SessionsController#hello as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/hello.html.erb within layouts/application
+  Rendered sessions/hello.html.erb within layouts/application (Duration: 2.4ms | Allocations: 531)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 2630)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2934)
+
+
+Started POST "/logout" for 127.0.0.1 at 2022-01-02 22:52:05 +0630
+Processing by SessionsController#logout as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "commit"=>"Log out"}
+Redirected to http://127.0.0.1:3000/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 378)
+
+
+Started GET "/login" for 127.0.0.1 at 2022-01-02 22:52:05 +0630
+Processing by SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 434)
+  Rendered layout layouts/application.html.erb (Duration: 10.0ms | Allocations: 2524)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 2782)
+
+
