@@ -1,0 +1,325 @@
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:15:24 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 1047)
+  Rendered layout layouts/application.html.erb (Duration: 55.3ms | Allocations: 14567)
+Completed 200 OK in 59ms (Views: 58.0ms | Allocations: 15476)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:18:42 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 156.4ms | Allocations: 7158)
+Completed 200 OK in 159ms (Views: 158.2ms | Allocations: 7409)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:18:44 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 890)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2976)
+Completed 200 OK in 13ms (Views: 12.3ms | Allocations: 3226)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:20:07 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 887)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 6304)
+Completed 200 OK in 36ms (Views: 34.9ms | Allocations: 6554)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2021-12-20 19:20:19 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"2222-12-22", "commit"=>"calculate"}
+2222-12-22
+Redirected to http://127.0.0.1:3000/result?age=-202
+Completed 302 Found in 2ms (Allocations: 446)
+
+
+Started GET "/result?age=-202" for 127.0.0.1 at 2021-12-20 19:20:19 +0630
+Processing by ArticlesController#result as TURBO_STREAM
+  Parameters: {"age"=>"-202"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 3.4ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2432)
+Completed 200 OK in 15ms (Views: 14.8ms | Allocations: 2736)
+
+
+Started GET "/result?age=-202" for 127.0.0.1 at 2021-12-20 19:20:23 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"-202"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 2312)
+Completed 200 OK in 9ms (Views: 7.4ms | Allocations: 2565)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:20:28 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 878)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 2967)
+Completed 200 OK in 26ms (Views: 25.2ms | Allocations: 3220)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:22:40 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 892)
+  Rendered layout layouts/application.html.erb (Duration: 42.0ms | Allocations: 6868)
+Completed 200 OK in 43ms (Views: 42.8ms | Allocations: 7118)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2021-12-20 19:22:47 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"", "commit"=>"calculate"}
+
+Completed 500 Internal Server Error in 9ms (Allocations: 733)
+
+
+  
+Date::Error (invalid date):
+  
+app/controllers/articles_controller.rb:10:in `parse'
+app/controllers/articles_controller.rb:10:in `calculate_age'
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:22:55 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 887)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2990)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 3240)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2021-12-20 19:23:05 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"1996-12-19", "commit"=>"calculate"}
+1996-12-19
+Redirected to http://127.0.0.1:3000/result?age=25
+Completed 302 Found in 4ms (Allocations: 427)
+
+
+Started GET "/result?age=25" for 127.0.0.1 at 2021-12-20 19:23:05 +0630
+Processing by ArticlesController#result as TURBO_STREAM
+  Parameters: {"age"=>"25"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 2312)
+Completed 200 OK in 7ms (Views: 6.3ms | Allocations: 2569)
+
+
+Started GET "/result?age=25" for 127.0.0.1 at 2021-12-20 19:24:15 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"25"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 2.8ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 2647)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 3436)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:24:16 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1079)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 3176)
+Completed 200 OK in 15ms (Views: 13.6ms | Allocations: 3482)
+
+
+Started GET "/" for 127.0.0.1 at 2021-12-20 19:25:55 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 888)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 6404)
+Completed 200 OK in 23ms (Views: 22.0ms | Allocations: 6655)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2021-12-20 19:26:03 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"1778-12-12", "commit"=>"calculate"}
+1778-12-12
+Redirected to http://127.0.0.1:3000/result?age=243
+Completed 302 Found in 2ms (Allocations: 449)
+
+
+Started GET "/result?age=243" for 127.0.0.1 at 2021-12-20 19:26:03 +0630
+Processing by ArticlesController#result as TURBO_STREAM
+  Parameters: {"age"=>"243"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2311)
+Completed 200 OK in 8ms (Views: 7.8ms | Allocations: 2615)
+
+
+Started GET "/result?age=243" for 127.0.0.1 at 2021-12-20 19:26:06 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"243"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2301)
+Completed 200 OK in 12ms (Views: 11.0ms | Allocations: 2552)
+
+
+Started GET "/result?age=243" for 127.0.0.1 at 2021-12-20 19:26:14 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"243"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 2.7ms | Allocations: 144)
+  Rendered layout layouts/application.html.erb (Duration: 15.0ms | Allocations: 2635)
+Completed 200 OK in 22ms (Views: 20.6ms | Allocations: 3423)
+
+
+Started GET "/result?age=243" for 127.0.0.1 at 2021-12-20 19:26:41 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"243"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 6299)
+Completed 200 OK in 22ms (Views: 20.9ms | Allocations: 6551)
+
+
+Started GET "/result?age=243" for 127.0.0.1 at 2021-12-20 19:27:07 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"243"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 1.1ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 2642)
+Completed 200 OK in 17ms (Views: 16.1ms | Allocations: 3430)
+
+
+Started GET "/result?age=243" for 127.0.0.1 at 2021-12-20 19:27:15 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"243"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 1.1ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 2656)
+Completed 200 OK in 17ms (Views: 16.6ms | Allocations: 3445)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-02 20:51:53 +0630
+Started GET "/" for 127.0.0.1 at 2022-01-02 20:51:55 +0630
+  [1m[36mActiveRecord::SchemaMigration Pluck (205.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by ArticlesController#index as HTML
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 163.9ms | Allocations: 1646)
+  Rendered articles/index.html.erb within layouts/application (Duration: 165.1ms | Allocations: 2328)
+  Rendered layout layouts/application.html.erb (Duration: 864.5ms | Allocations: 77376)
+Completed 200 OK in 1101ms (Views: 896.6ms | ActiveRecord: 0.0ms | Allocations: 82604)
+
+
+  Rendered layout layouts/application.html.erb (Duration: 897.6ms | Allocations: 78344)
+Completed 200 OK in 1187ms (Views: 930.1ms | ActiveRecord: 0.0ms | Allocations: 83730)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2022-01-02 20:52:10 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"1996-12-22", "commit"=>"calculate"}
+1996-12-22
+Redirected to http://127.0.0.1:3000/result?age=25
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 435)
+
+
+Started GET "/result?age=25" for 127.0.0.1 at 2022-01-02 20:52:10 +0630
+Processing by ArticlesController#result as TURBO_STREAM
+  Parameters: {"age"=>"25"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 16.3ms | Allocations: 145)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 2386)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 2691)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-02 21:26:51 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 32.7ms | Allocations: 1006)
+  Rendered layout layouts/application.html.erb (Duration: 118.1ms | Allocations: 14619)
+Completed 200 OK in 144ms (Views: 142.6ms | Allocations: 15526)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2022-01-02 21:27:00 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"1995-11-12", "commit"=>"calculate"}
+Redirected to http://127.0.0.1:3000/result?age=26
+Completed 302 Found in 49ms (Allocations: 378)
+
+
+Started GET "/result?age=26" for 127.0.0.1 at 2022-01-02 21:27:00 +0630
+Processing by ArticlesController#result as TURBO_STREAM
+  Parameters: {"age"=>"26"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 1.0ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 8.3ms | Allocations: 2384)
+Completed 200 OK in 10ms (Views: 9.6ms | Allocations: 2689)
+
+
+Started GET "/result?age=26" for 127.0.0.1 at 2022-01-02 21:31:23 +0630
+Processing by ArticlesController#result as HTML
+  Parameters: {"age"=>"26"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.2ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 135.5ms | Allocations: 17009)
+Completed 200 OK in 139ms (Views: 137.9ms | Allocations: 17645)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-02 21:31:24 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 839)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 2927)
+Completed 200 OK in 14ms (Views: 13.4ms | Allocations: 3180)
+
+
+Started GET "/" for 127.0.0.1 at 2022-01-02 21:31:25 +0630
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 852)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 2940)
+Completed 200 OK in 11ms (Views: 9.8ms | Allocations: 3190)
+
+
+Started POST "/born_on" for 127.0.0.1 at 2022-01-02 21:31:30 +0630
+Processing by ArticlesController#calculate_age as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "dob"=>"1887-12-12", "commit"=>"calculate"}
+Redirected to http://127.0.0.1:3000/result?age=134
+Completed 302 Found in 2ms (Allocations: 385)
+
+
+Started GET "/result?age=134" for 127.0.0.1 at 2022-01-02 21:31:30 +0630
+Processing by ArticlesController#result as TURBO_STREAM
+  Parameters: {"age"=>"134"}
+  Rendering layout layouts/application.html.erb
+  Rendering articles/result.html.erb within layouts/application
+  Rendered articles/result.html.erb within layouts/application (Duration: 0.3ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 7.1ms | Allocations: 2258)
+Completed 200 OK in 9ms (Views: 8.3ms | Allocations: 2515)
+
+
