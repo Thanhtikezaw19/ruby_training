@@ -1,16 +1,11 @@
-for row in 1..8 do 
-
-  for col in 1..8 do 
-
+for row in 1..8
+  for col in 1..8
     if (col + row).even?
       print "1 "
-    else 
+    else
       print "0 "
     end
-    
   end
 
   puts
-
-end  
-
+end
