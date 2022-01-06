@@ -1,0 +1,20 @@
+#dob {
+    width: 30%;
+    height: 30px;
+    margin: 20px;
+    background: #808080;
+    color: #fff;
+    border-radius: 7px;
+}
+
+input[type="submit"] {
+    margin: 20px;
+    padding: 0px auto;
+    font-size: 15px;
+}
+
+h1 {
+    color: #0f70dfb2;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
