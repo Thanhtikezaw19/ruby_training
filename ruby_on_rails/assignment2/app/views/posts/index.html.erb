@@ -1,0 +1,25 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Posts</h1>
+
+<div id="posts">
+  <% @posts.each do |post| %>
+    <%= render post %>
+  <% end %>
+</div>
+
+<h2>Import Posts</h2>
+
+<%= form_tag import_posts_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+<%#<p>
+<% link_to "New post", new_user_post_path %>
+<%#</p>%>
+</p>
+<%= link_to "Download as CSV", exportcsv_path(format: "csv") %>
+</p>
+<p>
+<%= link_to "Back to users", users_path %>
+</p>
