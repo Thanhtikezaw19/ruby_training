@@ -1,0 +1,16 @@
+<div class=create-input>
+  <h1>Input Image file in the form</h1>
+    <%= form_tag("/forms", :multipart => true) do %>
+      <div class = "file-input">
+        <label>Upload a Picture</label>
+        <%= file_field_tag "picture", accept: "image/*" %> <br>
+      </div>
+      <div class = "file-input">
+        <label>Insert Folder Name </label>
+        <%= text_field_tag "folder_name", nil %> <br>
+      </div>
+      <div class = "file-input"> 
+        <%= submit_tag "Upload" %>
+      </div>
+    <% end %>
+</div>
