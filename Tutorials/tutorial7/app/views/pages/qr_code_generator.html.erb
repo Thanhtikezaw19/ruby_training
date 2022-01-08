@@ -3,12 +3,12 @@
 
 <%= form_tag :qr_code_download, method: :get do |f| %>
   <div class="field">
-    <%= label_tag 'Text or URL' %>
+    <%= label_tag "Text or URL" %>
     <%= text_field_tag :content, nil, required: true %>
   </div>
 
   <div class="actions">
-    <%= submit_tag 'Generate QR code' %>
+    <%= submit_tag "Generate QR code" %>
   </div>
 <% end %>
 </div>

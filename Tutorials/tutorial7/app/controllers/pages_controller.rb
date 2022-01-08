@@ -1,11 +1,10 @@
 class PagesController < ApplicationController
-
   def qr_code_generator
     session.clear
- end
+  end
 
   def qr_code_download
-    require 'rqrcode'
+    require "rqrcode"
     #create qrcode
     qr = RQRCode::QRCode.new(params[:content])
     #as a png format
@@ -13,13 +12,13 @@ class PagesController < ApplicationController
       bit_depth: 1,
       border_modules: 4,
       color_mode: ChunkyPNG::COLOR_GRAYSCALE,
-      color: 'black',
+      color: "black",
       file: nil,
-      fill: 'white',
+      fill: "white",
       module_px_size: 6,
       resize_exactly_to: false,
       resize_gte_to: false,
-      size: 400
+      size: 400,
     )
   end
 end
