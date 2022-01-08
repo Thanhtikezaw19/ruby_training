@@ -21,11 +21,9 @@ class PostsController < ApplicationController
 
   # POST /posts or /posts.json
   def create
-
-    @user = UserService.getUserById(params[:user_id])
+    @user = UserService.getUserById(session[:user_id])
     @post = PostService.createPost(@user, post_params)
-    redirect_to user_path(@user), notice: "Post created Successfully"
-
+    redirect_to user_posts_path(@user), notice: "Post created Successfully"
   end
 
   # PATCH/PUT /posts/1 or /posts/1.json
@@ -38,7 +36,6 @@ class PostsController < ApplicationController
     else
       render :edit, notice: "update failed"
     end
-
   end
 
   # DELETE /posts/1 or /posts/1.json
@@ -47,19 +44,18 @@ class PostsController < ApplicationController
     PostService.destroyPost(@post)
 
     redirect_to user_path(@user), notice: "Post deleted"
-
   end
-  
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_post
-      @post = Post.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def post_params
-      params.fetch(:post, {})
-      params.require(:post).permit(:title, :description, :public_flag)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_post
+    @post = Post.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def post_params
+    params.fetch(:post, {})
+    params.require(:post).permit(:title, :description, :public_flag)
+  end
 end
