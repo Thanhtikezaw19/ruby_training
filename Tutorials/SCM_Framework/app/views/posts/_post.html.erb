@@ -1,0 +1,17 @@
+<div id="<%= dom_id post %>">
+<table>
+  <tr>
+    <th><strong>Title:</strong></th>
+    <th><strong>Description:</strong></th>
+    <th><strong>Public_Flag:</strong></th>
+  </tr>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.description %></td>
+    <td><%= post.public_flag %></td>
+  </tr>
+<table>
+<p>
+  <%= button_to "Delete this Post", [post.user, post], method: :delete %>
+</p>
+</div>
