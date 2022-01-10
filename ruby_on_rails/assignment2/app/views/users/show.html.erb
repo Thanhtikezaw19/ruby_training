@@ -1,0 +1,20 @@
+<p style="color: green"><%= notice %></p>
+<%= link_to "Logout", logout_path %>
+<p>
+
+<%= render @user %>
+
+<div>
+  <p><%= link_to "Edit this user", edit_user_path(@user) %> </p>
+  <p><%= link_to "Back to users", users_path %> </p>
+  <p><%= link_to "Go to Posts", user_posts_path(@user) %></p>
+  <%= button_to "Delete this user", @user, method: :delete %>
+</div>
+
+<h2> Posts </h2>
+<%= render @user.posts %>
+
+<h2> Add Post: </h2>
+<%= render "posts/form" %>
+
+

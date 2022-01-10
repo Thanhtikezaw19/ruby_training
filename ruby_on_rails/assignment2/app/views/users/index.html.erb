@@ -1,0 +1,54 @@
+<p style="color: green"><%= notice %></p>
+<h1>Users</h1>
+<div class= "search-panel clearfix">
+  <div class = "first-div">
+    <p>
+      <%= form_tag :users, method: :get, class: "search" do %>
+        <%= text_field_tag "name", params[:name], placeholder: "name" %>
+        <%= submit_tag "Search" %>
+      <% end %>
+    </p>
+    <p>
+      <%= form_tag :users, method: :get, class: "search" do %>
+        <%= text_field_tag "email", params[:email], placeholder: "email" %>
+        <%= submit_tag "Search" %>
+      <% end %>
+    </p>
+    <p>
+      <%= form_tag :users, method: :get, class: "search" do %>
+        <%= text_field_tag "phone", params[:phone], placeholder: "Phone" %>
+        <%= submit_tag "Search" %>
+      <% end %>
+    </p>
+  </div>
+  <div class = "second-div">
+    <p>
+      <%= form_tag :users, method: :get, class: "search" do %>
+        <%= text_field_tag "address", params[:address], placeholder: "address" %>
+        <%= submit_tag "Search" %>
+      <% end %>
+    </p>
+    <p>
+      <%= form_tag :users, method: :get, class: "search" do %>
+        <%= select_tag :super_user_flag, options_for_select([["Choose UserType", ""], ["super user", 1], ["normal user", 0]]), {} %>
+      <%= submit_tag "Search" %>
+      <% end %>
+    </p>
+    <p>
+      <%= form_tag :users, method: :get, class: "search" do %>
+        <%= text_field_tag "birthday", params[:birthday], placeholder: "Birthday" %>
+        <%= submit_tag "Search" %>
+      <% end %>
+    </p> 
+  </div>
+</div>
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New user", new_user_path %>

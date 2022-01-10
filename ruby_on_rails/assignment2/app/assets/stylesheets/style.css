@@ -1,0 +1,41 @@
+.clearfix:after {
+  display: block;
+  clear: both;
+  height: 0px;
+  visibility: hidden;
+  font-size: 0px;
+  content: "";
+}
+
+h1 {
+  color: #5a5aeb;
+}
+
+.submit {
+  padding-top: 15px;
+}
+
+label {
+  color: #3f3c3c;
+}
+
+h2 {
+  color: #cd5c5c;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.first-div {
+  float: left;
+  width: 20%;
+}
+
+.second-div {
+  float: left;
+  width: 20%;
+}
