@@ -1,6 +1,5 @@
 class PostRepository
   class << self
-
     def createPost(user, post)
       @is_save_post = user.posts.create(post)
     end
@@ -12,7 +11,5 @@ class PostRepository
     def destroyPost(post)
       post.destroy
     end
-
-
   end
 end

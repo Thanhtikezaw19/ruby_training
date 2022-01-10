@@ -1,12 +1,23 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Posts</h1>
-
-<div id="posts">
+<table>
+  <tr>
+  <th>Title</th>
+  <th>Description</th>
+  <th>Flag?</th>
+  <th>Action</th>
+  </tr>
   <% @posts.each do |post| %>
-    <%= render post %>
+  <tr>
+  <td><%= post.title %></td>
+  <td><%= post.description %></td>
+  <td><%= post.public_flag %></td>
+  <td><%= button_to "Delete this Post", [post.user, post], method: :delete %></td>
+  </tr>
   <% end %>
-</div>
+</table>
+
 
 <h2>Import Posts</h2>
 
@@ -14,11 +25,8 @@
   <%= file_field_tag :file %>
   <%= submit_tag "Import" %>
 <% end %>
-<%#<p>
-<% link_to "New post", new_user_post_path %>
-<%#</p>%>
 </p>
-<%= link_to "Download as CSV", exportcsv_path(format: "csv") %>
+<%= link_to "Download as CSV", export_csv_path(format: "csv") %>
 </p>
 <p>
 <%= link_to "Back to users", users_path %>

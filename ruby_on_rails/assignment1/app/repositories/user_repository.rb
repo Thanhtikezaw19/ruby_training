@@ -1,10 +1,9 @@
 class UserRepository
   class << self
-    
     def findByEmail(email)
       @user = User.find_by(email: email)
     end
-    
+
     def getAllUsers
       @users = User.all
     end
@@ -24,6 +23,5 @@ class UserRepository
     def getUserById(id)
       @user = User.find(id)
     end
-
   end
 end

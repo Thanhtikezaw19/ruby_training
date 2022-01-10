@@ -1,6 +1,5 @@
 class UserService
   class << self
-
     def findByEmail(email)
       @user = UserRepository.findByEmail(email)
     end
@@ -24,6 +23,5 @@ class UserService
     def getUserById(id)
       @user = UserRepository.getUserById(id)
     end
-
   end
 end

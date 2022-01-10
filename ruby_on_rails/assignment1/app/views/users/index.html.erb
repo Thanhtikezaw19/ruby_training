@@ -1,12 +1,27 @@
 <p style="color: green"><%= notice %></p>
 <h1>Users</h1>
-<div id="users">
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Super User Flag</th>
+    <th>Phone</th>
+    <th>Address</th>
+    <th>Birthday</th>
+    <th>Action</th>
+  </tr>
   <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.super_user_flag %></td>
+    <td><%= user.phone %></td>
+    <td><%= user.address %></td>
+    <td><%= user.birthday %></td>
+    <td><%= link_to "Show this user", user %></td>
+  </tr>
   <% end %>
-</div>
+</table>
 
 <%= link_to "New user", new_user_path %>
+<%= link_to "Go to Posts", user_posts_path(@users) %>

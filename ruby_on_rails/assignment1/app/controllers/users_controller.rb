@@ -29,7 +29,6 @@ class UsersController < ApplicationController
     else
       render :new, notice: "Failed to create"
     end
-    
   end
 
   # PATCH/PUT /users/1 or /users/1.json
@@ -41,25 +40,23 @@ class UsersController < ApplicationController
     else
       render :edit, notice: "Unable to update"
     end
-
   end
 
   # DELETE /users/1 or /users/1.json
   def destroy
-
     UserService.destroyUser(@user)
     redirect_to users_path, notice: "Deleted User Successfully"
-
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_user
-      @user = User.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def user_params
-      params.require(:user).permit(:name, :email, :password, :super_user_flag, :phone, :address, :birthday)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_user
+    @user = User.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def user_params
+    params.require(:user).permit(:name, :email, :password, :super_user_flag, :phone, :address, :birthday)
+  end
 end
