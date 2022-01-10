@@ -1,0 +1,44 @@
+<p style="color: green"><%= notice %></p>
+
+<%= form_with(model: @posts, local: false, url: posts_path) do |form| %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :privacy, style: "display: block" %>
+    <%= form.select :privacy, options_for_select([["Privacy", ""], ["Public", true], ["Private", false]]), {}, { class: "form-select" } %>
+  </div>
+
+  <div>
+    <%= form.submit :Post %>
+  </div>
+<% end %>
+
+<h1>Post Lists</h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Privacy</th>
+    <th>Created_at</th>
+    <th>Action</th>
+  </tr>
+  <% @posts.each do |post| %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.description %></td>
+    <td><%= post.privacy %></td>
+    <td><%= post.created_at %></td>
+    <td><%= button_to "Delete", post_path(post), method: :delete, data: { confirm: "Are you sure?" },
+                                                 :remote => true, :class => "delete_post" %></td>
+  </tr>
+  <% end %>
+</table>
