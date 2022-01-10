@@ -1,0 +1,33 @@
+.container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: #cac6c6;
+}
+
+h1 {
+  color: #0000ff;
+  text-align: center;
+}
+
+.field,
+.actions {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.image {
+  padding-left: 25%;
+}
+
+a {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  border: 1px solid #000000;
+  color: #000000;
+  text-decoration: none;
+}
+
+.linktab {
+  text-align: center;
+}
