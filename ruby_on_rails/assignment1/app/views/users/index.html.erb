@@ -8,7 +8,7 @@
     <th>Phone</th>
     <th>Address</th>
     <th>Birthday</th>
-    <th>Action</th>
+    <th>Operation</th>
   </tr>
   <% @users.each do |user| %>
   <tr>
@@ -18,7 +18,7 @@
     <td><%= user.phone %></td>
     <td><%= user.address %></td>
     <td><%= user.birthday %></td>
-    <td><%= link_to "Show this user", user %></td>
+    <td><%= link_to "Show", user %><%= link_to "Edit", edit_user_path(user.id) %></td>
   </tr>
   <% end %>
 </table>

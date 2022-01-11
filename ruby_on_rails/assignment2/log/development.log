@@ -1,0 +1,38 @@
+Started GET "/" for ::1 at 2022-01-11 17:08:38 +0630
+  [1m[36mActiveRecord::SchemaMigration Pluck (1133.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by LoginController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering login/index.html.erb within layouts/application
+  Rendered login/index.html.erb within layouts/application (Duration: 23.0ms | Allocations: 1476)
+  Rendered layout layouts/application.html.erb (Duration: 670.5ms | Allocations: 96654)
+Completed 200 OK in 716ms (Views: 679.2ms | ActiveRecord: 0.0ms | Allocations: 102678)
+
+
+Started GET "/users/new" for ::1 at 2022-01-11 17:08:46 +0630
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 209.4ms | Allocations: 6534)
+  Rendered users/new.html.erb within layouts/application (Duration: 211.4ms | Allocations: 6835)
+  Rendered layout layouts/application.html.erb (Duration: 216.5ms | Allocations: 8944)
+Completed 200 OK in 343ms (Views: 218.7ms | ActiveRecord: 47.1ms | Allocations: 19107)
+
+
+Started GET "/users" for ::1 at 2022-01-11 17:08:48 +0630
+Processing by UsersController#index as HTML
+  [1m[35m (22.6ms)[0m  [1m[35m#<User::ActiveRecord_Relation:0x00007f360cc49890>[0m
+  ↳ app/controllers/users_controller.rb:13:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (253.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE (name LIKE '%%' AND email LIKE '%%' AND phone LIKE '%%' AND address LIKE '%%' AND birthday LIKE '%%' AND super_user_flag LIKE '%%')[0m
+  ↳ app/views/users/index.html.erb:46
+  Rendered users/_user.html.erb (Duration: 1.8ms | Allocations: 268)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 29)
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 29)
+  Rendered users/_user.html.erb (Duration: 0.4ms | Allocations: 29)
+  Rendered users/_user.html.erb (Duration: 0.3ms | Allocations: 29)
+  Rendered users/index.html.erb within layouts/application (Duration: 290.1ms | Allocations: 3372)
+  Rendered layout layouts/application.html.erb (Duration: 300.4ms | Allocations: 5466)
+Completed 200 OK in 329ms (Views: 48.9ms | ActiveRecord: 276.1ms | Allocations: 6239)
+
+
