@@ -1,0 +1,13 @@
+<h2> Dear <b><%= @logged_in_user.name %>!</b> Your Created Posts <h2>
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+  </tr>
+  <% @posts.each do |post| %>
+  <tr>
+    <td><%= post.title %></td>
+    <td><%= post.description %></td>
+  </tr>
+  <% end %>
+</table>

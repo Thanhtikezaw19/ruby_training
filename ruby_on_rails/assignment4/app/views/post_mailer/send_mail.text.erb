@@ -1,0 +1,4 @@
+Dear <%= @logged_in_user.name %> Your Created Posts are here!
+<% @posts.each do |post| %>
+  Title=<%= post.title %> Description=<%= post.description %>
+<% end %>
